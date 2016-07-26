@@ -1,7 +1,15 @@
 class CompareNumber {
     static compare(answer, input) {
         const numbers = input.split('');
-        const answers = answer.split('');
+        const answers = answer.map(a=>a.toString());
+        console.log(answers);
+        const uniqueArray = numbers.filter(function(item, pos) {
+            return numbers.indexOf(item) == pos;
+        });
+        if (uniqueArray.length<4) {
+            console.log('Cannot input duplicate numbers!');
+            return '';
+        }
 
         const B = ()=> {
             return numbers.map((number, index)=>

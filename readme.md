@@ -19,7 +19,6 @@
 写一个Guess类，还是只有一个函数，但是只有一个参数。把前两问做的类集成起来，写一个集成的单元测试，写一个集成测试。
 
 完成整个游戏。整个游戏是以命令行方式进行的。每回游戏有六次机会。每输入一次数字就会减少一次机会并打印xAxB。
-
 当游戏开始时，打印“Welcome!”空一行打印 “Please input your number(6): “
 每次输入完并敲击回车，就会在下面打印出xAxB，然后空一行打印出新的”Please input your number(x): “
 当输入的数字包含重复数字并回车时，在下面打印”Cannot input duplicate numbers!”
