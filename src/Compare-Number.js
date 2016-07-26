@@ -1,5 +1,5 @@
 class CompareNumber {
-    static guess(answer, input) {
+    static compare(answer, input) {
         const numbers = input.split('');
         const answers = answer.split('');
 
