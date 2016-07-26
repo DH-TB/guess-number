@@ -1,21 +1,14 @@
 class AnswerGenerator {
 
-    static fourDigit() {
-        // number.push(Math.floor(Math.random() * 10000));
-        const array = [];
-        for (let i = 0; i < 4; i++) {
-            let randomNumber = Math.floor(Math.random() * 9);
-            let found = false;
-            const isTrue = array.find(arr=>arr == randomNumber);
-            if (isTrue) {
-                found = true;
-                break;
-            }
-            if (!found)
-                array.push(randomNumber);
+    static generate() {
+        const digits = [0,1,2,3,4,5,6,7,8,9];
+        
+        const result = [];
+        for(let i = 0;i<4;i++){
+            const randomNumber = parseInt(Math.random()*digits.length);
+            result.push((digits.splice(randomNumber,1))[0]);
         }
-        console.log(array);
-        return array.length;
+        return result;
     }
 }
 
