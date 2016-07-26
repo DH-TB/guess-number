@@ -25,3 +25,10 @@ describe('guess number', ()=> {
         expect(CompareNumber.guess(answers, inputs)).toEqual(expectText);
     });
 });
+
+describe('generator answer',()=>{
+    it('can get 4 digit',()=>{
+        const length = 4;
+        expect((new AnswerGenerator()).length).toEqual(length);
+    })
+});
