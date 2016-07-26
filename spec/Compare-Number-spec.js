@@ -1,5 +1,4 @@
 const CompareNumber = require('../src/Compare-Number');
-const AnswerGenerator = require('../src/Answer-Generator');
 
 describe('guess number', ()=> {
     const answers ='1234';
@@ -24,16 +23,4 @@ describe('guess number', ()=> {
         const expectText = '0A0B';
         expect(CompareNumber.guess(answers, inputs)).toEqual(expectText);
     });
-});
-
-describe('generator answer',()=>{
-    it('should generate answer',()=>{
-        const isUnique=(item,index,array)=>{
-            return array.lastIndexOf(item) === index;
-        };
-        const answer = AnswerGenerator.generate();
-        expect(answer.length).toEqual(4);
-        expect(answer.every(isUnique)).toBeTruthy();
-        expect(AnswerGenerator.generate()).not.toEqual(AnswerGenerator.generate());
-    })
 });
