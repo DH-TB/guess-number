@@ -1,0 +1,23 @@
+{
+  "name": "guess-number",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DH-TB/guess-number.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DH-TB/guess-number/issues"
+  },
+  "homepage": "https://github.com/DH-TB/guess-number#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
